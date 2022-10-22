@@ -8,6 +8,7 @@
 }
 body {
   font-family: "Open Sans", sans-serif;
+  height: 5000px;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -159,7 +160,6 @@ body {
       grid-template-columns: minmax(200px, 1fr);
     }
     .welcome {
-      overflow: hidden;
       .intro {
         background-color: #eee;
         img {
@@ -195,6 +195,37 @@ body {
         transition: 0.3s;
         &::hover {
           background-color: var(--blue-alt-color);
+        }
+      }
+    }
+    .quick-draft {
+      form {
+        input[type="text"]:focus {
+          box-shadow: none;
+        }
+        textarea:focus {
+          box-shadow: none;
+        }
+        textarea {
+          resize: none;
+          min-height: 200px;
+        }
+        input[type="submit"] {
+          width: fit-content;
+        }
+      }
+    }
+    .targets {
+      .target-box {
+        .icon {
+          width: 80px;
+          height: 80px;
+          margin-left: 15px;
+        }
+      }
+      .target-info {
+        .progress {
+          height: 5px;
         }
       }
     }

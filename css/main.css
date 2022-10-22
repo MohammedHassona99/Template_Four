@@ -9,6 +9,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  height: 5000px;
 }
 
 ::-webkit-scrollbar {
@@ -165,9 +166,6 @@ body {
     grid-template-columns: minmax(200px, 1fr);
   }
 }
-.page .wrapper .welcome {
-  overflow: hidden;
-}
 .page .wrapper .welcome .intro {
   background-color: #eee;
 }
@@ -206,4 +204,27 @@ body {
 }
 .page .wrapper .welcome .visit::hover {
   background-color: var(--blue-alt-color);
+}
+.page .wrapper .quick-draft form input[type=text]:focus {
+  box-shadow: none;
+}
+.page .wrapper .quick-draft form textarea:focus {
+  box-shadow: none;
+}
+.page .wrapper .quick-draft form textarea {
+  resize: none;
+  min-height: 200px;
+}
+.page .wrapper .quick-draft form input[type=submit] {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.page .wrapper .targets .target-box .icon {
+  width: 80px;
+  height: 80px;
+  margin-left: 15px;
+}
+.page .wrapper .targets .target-info .progress {
+  height: 5px;
 }/*# sourceMappingURL=main.css.map */
