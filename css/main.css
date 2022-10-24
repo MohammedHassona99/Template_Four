@@ -250,4 +250,9 @@ body {
 .page .content .wrapper .latest-tasks .tasks .task.done p,
 .page .content .wrapper .latest-tasks .tasks .task.done span {
   text-decoration: line-through;
+}
+.page .content .wrapper .latest-uploads .item-upload:not(:last-of-type) {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
 }/*# sourceMappingURL=main.css.map */
