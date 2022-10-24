@@ -9,7 +9,6 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  height: 5000px;
 }
 
 ::-webkit-scrollbar {
@@ -140,40 +139,40 @@ body {
   height: 32px;
   margin-left: 15px;
 }
-.page h1 {
+.page .content h1 {
   margin: 20px 20px 40px;
 }
-.page h1::before, .page h1::after {
+.page .content h1::before, .page .content h1::after {
   content: "";
   position: absolute;
   height: 3px;
   bottom: -10px;
   left: 0;
 }
-.page h1::before {
+.page .content h1::before {
   background-color: white;
   width: 120px;
 }
-.page h1::after {
+.page .content h1::after {
   background-color: black;
   width: 50px;
 }
-.page .wrapper {
+.page .content .wrapper {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
 @media (max-width: 767px) {
-  .page .wrapper {
+  .page .content .wrapper {
     grid-template-columns: minmax(200px, 1fr);
   }
 }
-.page .wrapper .welcome .intro {
+.page .content .wrapper .welcome .intro {
   background-color: #eee;
 }
-.page .wrapper .welcome .intro img {
+.page .content .wrapper .welcome .intro img {
   width: 200px;
   margin-bottom: -10px;
 }
-.page .wrapper .welcome .avatar {
+.page .content .wrapper .welcome .avatar {
   width: 64px;
   height: 64px;
   border: 2px solid white;
@@ -183,48 +182,72 @@ body {
   margin-left: 20px;
   margin-top: -32px;
 }
-.page .wrapper .welcome .info {
+.page .content .wrapper .welcome .info {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
-.page .wrapper .welcome .info > div {
+.page .content .wrapper .welcome .info > div {
   flex: 1;
 }
 @media (max-width: 767px) {
-  .page .wrapper .welcome .info > div:not(:last-child) {
+  .page .content .wrapper .welcome .info > div:not(:last-child) {
     margin-bottom: 20px;
   }
 }
-.page .wrapper .welcome .visit {
+.page .content .wrapper .welcome .visit {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 15px 15px auto;
   transition: 0.3s;
 }
-.page .wrapper .welcome .visit::hover {
+.page .content .wrapper .welcome .visit::hover {
   background-color: var(--blue-alt-color);
 }
-.page .wrapper .quick-draft form input[type=text]:focus {
+.page .content .wrapper .quick-draft form input[type=text]:focus {
   box-shadow: none;
 }
-.page .wrapper .quick-draft form textarea:focus {
+.page .content .wrapper .quick-draft form textarea:focus {
   box-shadow: none;
 }
-.page .wrapper .quick-draft form textarea {
+.page .content .wrapper .quick-draft form textarea {
   resize: none;
   min-height: 200px;
 }
-.page .wrapper .quick-draft form input[type=submit] {
+.page .content .wrapper .quick-draft form input[type=submit] {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
-.page .wrapper .targets .target-box .icon {
+.page .content .wrapper .targets .target-box .icon {
   width: 80px;
   height: 80px;
   margin-left: 15px;
 }
-.page .wrapper .targets .target-info .progress {
-  height: 5px;
+.page .content .wrapper .targets .target-info .progress {
+  height: 10px;
+}
+.page .content .wrapper .tickets-widget .box {
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.page .content .wrapper .latest-news .news img {
+  width: 100px;
+}
+.page .content .wrapper .latest-news .news:not(:last-of-type) {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.page .content .wrapper .latest-tasks .tasks .task:not(:last-of-type) {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.page .content .wrapper .latest-tasks .tasks .task.done {
+  opacity: 0.3;
+}
+.page .content .wrapper .latest-tasks .tasks .task.done p,
+.page .content .wrapper .latest-tasks .tasks .task.done span {
+  text-decoration: line-through;
 }/*# sourceMappingURL=main.css.map */
