@@ -255,4 +255,149 @@ body {
   margin-bottom: 15px;
   padding-bottom: 15px;
   border-bottom: 1px solid #eee;
+}
+.page .content .wrapper .last-project ul::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 10px;
+  background-color: var(--blue-color);
+}
+.page .content .wrapper .last-project ul li {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.page .content .wrapper .last-project ul li::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--blue-color);
+  border: 1px solid white;
+  outline: 1px solid var(--blue-color);
+  display: block;
+  margin-right: 15px;
+}
+.page .content .wrapper .reminders ul li {
+  position: relative;
+  margin-left: 20px;
+}
+.page .content .wrapper .reminders ul li p {
+  font-size: 14px;
+}
+.page .content .wrapper .reminders ul li span {
+  font-size: 12px;
+}
+.page .content .wrapper .reminders ul li::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.page .content .wrapper .reminders ul li:nth-child(1)::before {
+  background-color: var(--blue-color);
+}
+.page .content .wrapper .reminders ul li:nth-child(2)::before {
+  background-color: var(--green-color);
+}
+.page .content .wrapper .reminders ul li:nth-child(3)::before {
+  background-color: var(--orange-color);
+}
+.page .content .wrapper .reminders ul li:nth-child(4)::before {
+  background-color: var(--red-color);
+}
+.page .content .wrapper .social .box {
+  padding: 16px 16px 16px 70px;
+}
+.page .content .wrapper .social .box:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+.page .content .wrapper .social .box i,
+.page .content .wrapper .social .box svg {
+  width: 42px;
+  height: 100%;
+  padding: 0 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: 0.3s;
+}
+.page .content .wrapper .social .box i:hover,
+.page .content .wrapper .social .box svg:hover {
+  transform: rotate(7deg);
+}
+.page .content .wrapper .social .box.twitter {
+  background-color: rgba(29, 161, 242, 0.2);
+  color: #1da1f2;
+}
+.page .content .wrapper .social .box.twitter i,
+.page .content .wrapper .social .box.twitter svg,
+.page .content .wrapper .social .box.twitter a {
+  background-color: #1da1f2;
+}
+.page .content .wrapper .social .box.facebook {
+  background-color: rgba(24, 119, 242, 0.2);
+  color: #1da1f2;
+}
+.page .content .wrapper .social .box.facebook i,
+.page .content .wrapper .social .box.facebook svg,
+.page .content .wrapper .social .box.facebook a {
+  background-color: #1da1f2;
+}
+.page .content .wrapper .social .box.youtube {
+  background-color: rgba(225, 0, 0, 0.2);
+  color: #ff0000;
+}
+.page .content .wrapper .social .box.youtube i,
+.page .content .wrapper .social .box.youtube svg,
+.page .content .wrapper .social .box.youtube a {
+  background-color: #ff0000;
+}
+.page .content .wrapper .social .box.linkedin {
+  background-color: rgba(0, 119, 181, 0.2);
+  color: #0077b5;
+}
+.page .content .wrapper .social .box.linkedin i,
+.page .content .wrapper .social .box.linkedin svg,
+.page .content .wrapper .social .box.linkedin a {
+  background-color: #0075b5;
+}
+.page .content .wrapper .social .box span {
+  font-size: 14px;
+}
+.page .content .wrapper .social .box a {
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 2px 4px;
+}
+.page .content .projects table td {
+  padding: 15px;
+}
+.page .content .projects table thead td {
+  background-color: #eee;
+  font-weight: bold;
+}
+.page .content .projects table tbody td {
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  transition: 0.3s;
+}
+.page .content .projects table img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: white;
+}
+.page .content .projects table img:not(:first-of-type) {
+  margin-left: -20px;
 }/*# sourceMappingURL=main.css.map */

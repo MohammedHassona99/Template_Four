@@ -268,6 +268,176 @@ body {
           border-bottom: 1px solid #eee;
         }
       }
+      .last-project {
+        ul {
+          &::before {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            left: 10px;
+            background-color: var(--blue-color);
+          }
+          li {
+            margin-top: 20px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            &::before {
+              content: "";
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              background-color: var(--blue-color);
+              border: 1px solid white;
+              outline: 1px solid var(--blue-color);
+              display: block;
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+      .reminders {
+        ul {
+          li {
+            position: relative;
+            margin-left: 20px;
+            p {
+              font-size: 14px;
+            }
+            span {
+              font-size: 12px;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              left: -25px;
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+              transform: translateY(-50%);
+              top: 50%;
+            }
+            &:nth-child(1) {
+              &::before {
+                background-color: var(--blue-color);
+              }
+            }
+            &:nth-child(2) {
+              &::before {
+                background-color: var(--green-color);
+              }
+            }
+            &:nth-child(3) {
+              &::before {
+                background-color: var(--orange-color);
+              }
+            }
+            &:nth-child(4) {
+              &::before {
+                background-color: var(--red-color);
+              }
+            }
+          }
+        }
+      }
+      .social {
+        .box {
+          padding: 16px 16px 16px 70px;
+          &:not(:last-of-type) {
+            margin-bottom: 10px;
+          }
+          i,
+          svg {
+            width: 42px;
+            height: 100%;
+            padding: 0 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            transition: 0.3s;
+            &:hover {
+              transform: rotate(7deg);
+            }
+          }
+          &.twitter {
+            background-color: rgb(29 161 242 / 20%);
+            color: #1da1f2;
+            i,
+            svg,
+            a {
+              background-color: #1da1f2;
+            }
+          }
+          &.facebook {
+            background-color: rgb(24 119 242 / 20%);
+            color: #1da1f2;
+            i,
+            svg,
+            a {
+              background-color: #1da1f2;
+            }
+          }
+          &.youtube {
+            background-color: rgb(225 0 0 / 20%);
+            color: #ff0000;
+            i,
+            svg,
+            a {
+              background-color: #ff0000;
+            }
+          }
+          &.linkedin {
+            background-color: rgb(0 119 181 / 20%);
+            color: #0077b5;
+            i,
+            svg,
+            a {
+              background-color: #0075b5;
+            }
+          }
+          span {
+            font-size: 14px;
+          }
+          a {
+            border-radius: 5px;
+            font-size: 12px;
+            padding: 2px 4px;
+          }
+        }
+      }
+    }
+    .projects {
+      table {
+        td {
+          padding: 15px;
+        }
+        thead {
+          td {
+            background-color: #eee;
+            font-weight: bold;
+          }
+        }
+        tbody {
+          td {
+            border-bottom: 1px solid #eee;
+            border-left: 1px solid #eee;
+            transition: 0.3s;
+          }
+        }
+        img {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          padding: 2px;
+          background-color: white;
+          &:not(:first-of-type){
+            margin-left: -20px;
+          }
+        }
+      }
     }
   }
 }

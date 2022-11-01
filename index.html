@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300;1,600&display=swap"
-    />
+    /> -->
     <title>Dashboard</title>
   </head>
   <body>
@@ -587,8 +587,207 @@
             </div>
           </div>
           <!-- End latest Uploads -->
+
+          <!-- Start Last Project Progress -->
+          <div class="last-project bg-white p-3 rounded-3">
+            <h4 class="fw-bold">Last Project Progress</h4>
+            <ul class="list-unstyled position-relative">
+              <li>Got The Project</li>
+              <li>Started The Project</li>
+              <li>The Project About To Finish</li>
+              <li>Test The Project</li>
+              <li>Finish The Project & Get Money</li>
+            </ul>
+          </div>
+          <!-- End Last Project Progress -->
+
+          <!-- Start Reminders -->
+          <div class="reminders bg-white p-3 rounded-3">
+            <h4 class="fw-bold">Reminders</h4>
+            <ul class="list-unstyled mt-4">
+              <li class="border-start border-primary ps-3 mb-3">
+                <p class="mb-0 fw-bold">Check My Tasks List</p>
+                <span class="text-secondary">28/09/2022 - 12:00am</span>
+              </li>
+              <li class="border-start border-success ps-3 mb-3">
+                <p class="mb-0 fw-bold">Check My Projects</p>
+                <span class="text-secondary">23/04/2022 - 12:00am</span>
+              </li>
+              <li class="border-start border-warning ps-3 mb-3">
+                <p class="mb-0 fw-bold">Check My Clients</p>
+                <span class="text-secondary">05/11/2022 - 12:00am</span>
+              </li>
+              <li class="border-start border-danger ps-3 mb-3">
+                <p class="mb-0 fw-bold">Finish The Development Workshop</p>
+                <span class="text-secondary">20/07/2022 - 12:00am</span>
+              </li>
+            </ul>
+          </div>
+          <!-- End Reminders -->
+
+          <!-- Start Latest Posts -->
+          <div class="latest-posts bg-white p-3 rounded-3">
+            <h4 class="fw-bold">Latest Post</h4>
+            <div
+              class="profile d-flex align-items-center my-2 py-3 border-bottom border-1"
+            >
+              <img
+                class="me-3"
+                style="width: 50px"
+                src="./images/avatar.png"
+                alt=""
+              />
+              <div class="info">
+                <h6 class="fw-bold">Mohammed Hassona</h6>
+                <span class="text-secondary">About 3 Hours Ago</span>
+              </div>
+            </div>
+            <div class="content py-3 border-bottom border-1">
+              <p>
+                You Can Fool All Of The People Some Of The Time, And Some Of The
+                People All Of The Time, But You Can't Fool All Of The People All
+                Of The Time.
+              </p>
+            </div>
+            <div
+              class="states d-flex justify-content-between align-items-center text-secondary pt-3"
+            >
+              <span>
+                <i class="fa-regular fa-heart"></i>
+                1.8K </span
+              ><span> <i class="fa-regular fa-comments"></i> 500 </span>
+            </div>
+          </div>
+          <!-- End Latest Posts -->
+
+          <!-- Start Social -->
+          <div class="social bg-white p-3 rounded-3">
+            <h4 class="fw-bold">Social Media Stats</h4>
+            <div
+              class="box twitter position-relative d-flex justify-content-between align-items-center"
+            >
+              <i class="fa-brands fa-twitter text-white"></i>
+              <span>90K Followers</span>
+              <a class="text-white text-decoration-none" href="">Follow</a>
+            </div>
+            <div
+              class="box facebook position-relative d-flex justify-content-between align-items-center"
+            >
+              <i class="fa-brands fa-facebook text-white"></i>
+              <span>2M Like</span>
+              <a class="text-white text-decoration-none" href="">Like</a>
+            </div>
+            <div
+              class="box youtube position-relative d-flex justify-content-between align-items-center"
+            >
+              <i class="fa-brands fa-youtube text-white"></i>
+              <span>1M Subs</span>
+              <a class="text-white text-decoration-none" href="">Subscribes</a>
+            </div>
+            <div
+              class="box twitter position-relative d-flex justify-content-between align-items-center"
+            >
+              <i class="fa-brands fa-linkedin text-white"></i>
+              <span>90K Followers</span>
+              <a class="text-white text-decoration-none" href="">Follow</a>
+            </div>
+          </div>
+          <!-- End Social  -->
         </div>
         <!-- End Wrapper -->
+
+        <!-- Start Projects -->
+          <div class="projects bg-white rounded-3 p-3">
+            <h4 class="fw-bold">Projects</h4>
+            <div class="responsive-table overflow-auto">
+              <table class="w-100 fs-6">
+                <thead>
+                  <tr>
+                    <td>Name</td>
+                    <td>Finish Date</td>
+                    <td>Client</td>
+                    <td>Price</td>
+                    <td>Team</td>
+                    <td>Status</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ministry Wikipedia</td>
+                    <td>10 May 2022</td>
+                    <td>Ministry</td>
+                    <td>$5300</td>
+                    <td>
+                      <img src="./images/team-01.png" alt="" />
+                      <img src="./images/team-02.png" alt="" />
+                      <img src="./images/team-03.png" alt="" />
+                      <img src="./images/team-05.png" alt="" />
+                    </td>
+                    <td><span>Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td>Elzero Shop</td>
+                    <td>12 Oct 2021</td>
+                    <td>Elzero Company</td>
+                    <td>$1500</td>
+                    <td>
+                      <img src="./images/team-01.png" alt="" />
+                      <img src="./images/team-02.png" alt="" />
+                      <img src="./images/team-05.png" alt="" />
+                    </td>
+                    <td><span>In Progress</span></td>
+                  </tr>
+                  <tr>
+                    <td>Bouba App</td>
+                    <td>05 Sep 2021</td>
+                    <td>Bouba</td>
+                    <td>$800</td>
+                    <td>
+                      <img src="./images/team-01.png" alt="" />
+                      <img src="./images/team-03.png" alt="" />
+                    </td>
+                    <td><span>Completed</span></td>
+                  </tr>
+                  <tr>
+                    <td>Bouba App</td>
+                    <td>05 Sep 2021</td>
+                    <td>Bouba</td>
+                    <td>$800</td>
+                    <td>
+                      <img src="./images/team-01.png" alt="" />
+                      <img src="./images/team-03.png" alt="" />
+                    </td>
+                    <td><span>Completed</span></td>
+                  </tr>
+                  <tr>
+                    <td>Sayed Website</td>
+                    <td>24 May 2021</td>
+                    <td>Sayed</td>
+                    <td>$300</td>
+                    <td>
+                      <img src="./images/team-01.png" alt="" />
+                      <img src="./images/team-03.png" alt="" />
+                    </td>
+                    <td><span>Rejected</span></td>
+                  </tr>
+                  <tr>
+                    <td>Arena Application</td>
+                    <td>01 Mar 2021</td>
+                    <td>Arena Company</td>
+                    <td>$2600</td>
+                    <td>
+                      <img src="./images/team-01.png" alt="" />
+                      <img src="./images/team-02.png" alt="" />
+                      <img src="./images/team-03.png" alt="" />
+                      <img src="./images/team-04.png" alt="" />
+                    </td>
+                    <td><span>Completed</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- End Projects -->
       </div>
     </section>
     <!-- Start Page -->
