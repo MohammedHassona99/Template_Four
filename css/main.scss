@@ -433,7 +433,7 @@ body {
           border-radius: 50%;
           padding: 2px;
           background-color: white;
-          &:not(:first-of-type){
+          &:not(:first-of-type) {
             margin-left: -20px;
           }
         }
