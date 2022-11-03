@@ -421,6 +421,9 @@ body {
           }
         }
         tbody {
+          tr:hover td {
+            background-color: #faf7f7;
+          }
           td {
             border-bottom: 1px solid #eee;
             border-left: 1px solid #eee;

@@ -386,6 +386,9 @@ body {
   background-color: #eee;
   font-weight: bold;
 }
+.page .content .projects table tbody tr:hover td {
+  background-color: #faf7f7;
+}
 .page .content .projects table tbody td {
   border-bottom: 1px solid #eee;
   border-left: 1px solid #eee;
